@@ -1,44 +1,113 @@
 {
     "generic": [
         {
-            "id": 5,
-            "name": "reallocated_sectors",
-            "type": "counter"
+          "id": 1,
+          "name": "raw_read_error_rate",
+          "type": "gauge"
+        },
+        {
+          "id": 2,
+          "name": "throughput_performance",
+          "type": "gauge"
+        },
+        {
+          "id": 3,
+          "name": "spin_up_time",
+          "type": "gauge"
+        },
+        {
+          "id": 4,
+          "name": "start_stop_total",
+          "type": "counter"
+        },
+        {
+          "id": 5,
+          "name": "reallocated_sector_total",
+          "type": "counter"
+        },
+        {
+          "id": 7,
+          "name": "seek_error_rate",
+          "type": "gauge"
+        },
+        {
+          "id": 8,
+          "name": "seek_time_performance",
+          "type": "gauge"
+        },
+        {
+          "id": 9,
+          "name": "power_on_hours_total",
+          "type": "counter"
         },
         {
             "id": 10,
-            "name": "spin_retries_total",
+            "name": "spin_retry_total",
             "type": "counter"
         },
         {
-            "id": 183,
-            "match": "^.+Bad.+$",
-            "name": "runtime_bad_blocks_total",
-            "type": "counter"
+          "id": 12,
+          "name": "power_cycle_total",
+          "type": "counter"
         },
         {
-            "id": 184,
-            "name": "end_to_end_errors_total",
-            "type": "counter"
+          "id": 177,
+          "name": "wear_leveling_total",
+          "type": "counter"
         },
         {
-            "id": 187,
-            "name": "uncorrectable_errors_total",
-            "type": "counter"
+          "id": 179,
+          "name": "used_rsvd_blk_total",
+          "type": "counter"
         },
         {
-            "id": 188,
-            "name": "command_timeouts_total",
-            "type": "counter"
+          "id": 181,
+          "name": "program_fail_total",
+          "type": "counter"
         },
         {
-            "id": 190,
-            "name": "case_temperature_celsius",
-            "type": "gauge"
+          "id": 182,
+          "name": "erase_fail_count_total",
+          "type": "counter"
+        },
+        {
+          "id": 183,
+          "name": "runtime_bad_block",
+          "type": "gauge"
+        },
+        {
+          "id": 187,
+          "name": "uncorrectable_error_total",
+          "type": "counter"
+        },
+        {
+          "id": 188,
+          "name": "command_timeout",
+          "type": "gauge"
+        },
+        {
+          "id": 189,
+          "name": "high_fly_writes",
+          "type": "gauge"
+        },
+        {
+          "id": 190,
+          "name": "airflow_temperature_cel",
+          "type": "gauge"
+        },
+        {
+          "id": 193,
+          "name": "load_cycle_count",
+          "type": "counter"
         },
         {
             "id": 194,
             "name": "temperature_celsius",
+            "type": "gauge"
+        },
+        {
+            "id": 195,
+            "name": "ecc_error_rate",
             "type": "gauge"
         },
         {
@@ -57,9 +126,9 @@
             "type": "gauge"
         },
         {
-            "id": 201,
-            "name": "soft_read_error_rate",
-            "type": "gauge"
+          "id": 199,
+          "name": "udma_crc_error_total",
+          "type": "counter"
         },
         {
             "id": 230,
@@ -68,9 +137,14 @@
             "type": "gauge"
         },
         {
-            "id": 233,
-            "name": "wearout_percent",
-            "type": "gauge"
+          "id": 235,
+          "name": "por_recovery_total",
+          "type": "counter"
+        },
+        {
+          "id": 240,
+          "name": "head_flying_hours",
+          "type": "counter"
         },
         {
             "id": 241,

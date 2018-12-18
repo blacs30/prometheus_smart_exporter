@@ -27,8 +27,8 @@ import struct
 import socket
 import sys
 
-import systemd.daemon
-import systemd.journal
+# import systemd.daemon
+# import systemd.journal
 
 
 logger = logging.getLogger(__name__)
@@ -192,7 +192,7 @@ def main():
 
     logging_kwargs = {}
 
-    sd_fds = systemd.daemon.listen_fds()
+    # sd_fds = systemd.daemon.listen_fds()
     if len(sd_fds) == 0 and args.socket_path is None:
         print(
             "not started via socket activation. --socket-path is required but "
@@ -211,7 +211,8 @@ def main():
         sys.exit(1)
     elif len(sd_fds) == 1:
         logging_kwargs["handlers"] = [
-            systemd.journal.JournalHandler(),
+            # systemd.journal.JournalHandler(),
+            print("Systemd not used")
         ]
         sock = socket.fromfd(
             sd_fds[0],

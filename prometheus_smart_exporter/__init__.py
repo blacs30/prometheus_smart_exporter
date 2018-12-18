@@ -294,12 +294,12 @@ def main():
         help="Increase verbosity (up to -vvv)",
     )
 
-    parser.add_argument(
-        "--journal",
-        action="store_true",
-        default=False,
-        help="Log to systemd journal",
-    )
+    # parser.add_argument(
+    #     "--journal",
+    #     action="store_true",
+    #     default=False,
+    #     help="Log to systemd journal",
+    # )
 
     parser.add_argument(
         "-p", "--listen-port",
@@ -325,9 +325,9 @@ def main():
     args = parser.parse_args()
 
     logging_kwargs = {}
-    if args.journal:
-        import systemd.journal
-        logging_kwargs["handlers"] = [systemd.journal.JournalHandler()]
+    # if args.journal:
+        # import systemd.journal
+        # logging_kwargs["handlers"] = [systemd.journal.JournalHandler()]
 
     logging.basicConfig(
         level={

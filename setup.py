@@ -49,6 +49,7 @@ setup(
     package_data={
         "prometheus_smart_exporter": [
             "data/attrmap.json",
+            "data/device-db.json",
         ]
     },
     keywords="prometheus smart monitoring hdd ssd",
